@@ -15,9 +15,7 @@
       --muted: #a8b3c7;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -33,9 +31,7 @@
       padding: 26px 16px;
     }
 
-    .page {
-      width: min(520px, 100%);
-    }
+    .page { width: min(520px, 100%); }
 
     .hero {
       text-align: center;
@@ -81,9 +77,7 @@
       line-height: 1.08;
     }
 
-    h1 span {
-      color: var(--green);
-    }
+    h1 span { color: var(--green); }
 
     .subtitle {
       margin: 12px 0 0;
@@ -135,6 +129,7 @@
       font-size: 28px;
       background: rgba(39, 255, 154, 0.10);
       border: 1px solid rgba(39, 255, 154, 0.30);
+      flex-shrink: 0;
     }
 
     .app-title {
@@ -211,7 +206,7 @@
       </p>
     </section>
 
-    <div class="section-title">Disponível agora</div>
+    <div class="section-title">Disponíveis agora</div>
 
     <article class="app-card">
       <div class="app-top">
@@ -236,18 +231,30 @@
       </div>
     </article>
 
-    <div class="section-title">Em breve</div>
-
-    <article class="app-card coming">
+    <article class="app-card">
       <div class="app-top">
         <div class="icon">🔐</div>
         <div>
           <div class="app-title">Gerador de Senhas</div>
-          <span class="tag">🟢 Roda no navegador</span>
+          <span class="tag">🟢 Roda no navegador • Celular e PC</span>
         </div>
       </div>
-      <p class="description">Um mini app simples para criar senhas fortes direto no navegador.</p>
+
+      <p class="description">
+        Gere senhas fortes direto no navegador, sem instalar nada. A senha não é enviada para nenhum servidor.
+      </p>
+
+      <div class="buttons">
+        <a class="button" href="https://programarefacilia.github.io/gerador-de-senhas/" target="_blank" rel="noopener">
+          Testar agora
+        </a>
+        <a class="button secondary" href="https://github.com/programarefacilia/gerador-de-senhas" target="_blank" rel="noopener">
+          Ver código no GitHub
+        </a>
+      </div>
     </article>
+
+    <div class="section-title">Em breve</div>
 
     <article class="app-card coming">
       <div class="app-top">
@@ -258,6 +265,17 @@
         </div>
       </div>
       <p class="description">Uma calculadora visual para celular e PC, feita com HTML, CSS e JavaScript.</p>
+    </article>
+
+    <article class="app-card coming">
+      <div class="app-top">
+        <div class="icon">🕹️</div>
+        <div>
+          <div class="app-title">Mini Jogos</div>
+          <span class="tag">🟢 Navegador / 🔵 Python</span>
+        </div>
+      </div>
+      <p class="description">Novos joguinhos e desafios simples para você testar e aprender.</p>
     </article>
 
     <p class="footer">
